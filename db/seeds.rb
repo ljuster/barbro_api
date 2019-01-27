@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# db/seeds.rb
+require 'faker'
+
+# create 20 Todo Lists
+20.times do
+  Drinks.create(
+    title: Faker::Lorem.word
+  )
+end
